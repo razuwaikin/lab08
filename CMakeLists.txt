@@ -18,7 +18,9 @@ find_package(Boost CONFIG REQUIRED)
 
 include_directories(solver_lib)
 include_directories(formatter_ex_lib)
+include_directories(print)
 
+add_subdirectory(print)
 add_subdirectory(solver_lib)
 add_subdirectory(formatter_ex_lib)
 add_executable(solver equation.cpp)
